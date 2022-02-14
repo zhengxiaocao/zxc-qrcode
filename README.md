@@ -8,3 +8,15 @@ npm i qrcode-parser
 # install lrz          // 压缩图片的库
 npm i lrz
 ``` 
+## Usage
+``` bash
+# import package
+import gzip from "lrz";
+import qrcodeParser from "qrcode-parser";
+
+// 压缩图片
+const gzipImg = await gzip(URL.createObjectURL(file.raw));
+
+// 解析二维码
+this.msg = await qrcodeParser(pngBase64);
+```
